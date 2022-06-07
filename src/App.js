@@ -6,6 +6,9 @@ import Home from "./Pages/Home";
 import News from "./Pages/News";
 import Forum from "./Pages/Forum";
 import ErrorPage from "./Pages/ErrorPage";
+import SignUp from "./Pages/SignUp";
+import Login from "./Pages/Login";
+import Socials from "./Pages/Socials";
 
 function App() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -38,7 +41,7 @@ function App() {
               <Link to="/socials">Socials</Link>
             </li>
             <li>
-              <Link to="/signup">Sign Up</Link>
+              <Link to="/sign-up">Sign Up</Link>
             </li>
             <li>
               <Link to="/signin">Log In</Link>
@@ -58,6 +61,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/signin" element={<Login />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/socials" element={<Socials />} />
+
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>
