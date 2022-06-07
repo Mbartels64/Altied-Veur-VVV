@@ -21,13 +21,13 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a href="">home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="">News</a>
+              <a href="/news">News</a>
             </li>
             <li>
-              <a href="">Forum</a>
+              <a href="/forum">Forum</a>
             </li>
             <li>
               <a href="">Socials</a>

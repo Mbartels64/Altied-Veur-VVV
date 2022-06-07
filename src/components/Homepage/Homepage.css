@@ -53,6 +53,22 @@ article p {
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
+a.button1 {
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #000000;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: rgb(2, 22, 58);
+  text-align: center;
+  transition: all 0.2s;
+}
+a.button1:hover {
+  background-color: rgba(12, 96, 96, 0.237);
+}
 
 @media screen and (max-width: 794px) {
   .news-container {

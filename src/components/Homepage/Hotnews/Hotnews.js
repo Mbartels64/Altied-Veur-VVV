@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Hotnews() {
+  let navigate = useNavigate();
   return (
     <div>
       <article>
@@ -31,7 +33,14 @@ function Hotnews() {
           debitis velit, itaque possimus recusandae, aperiam expedita animi
           quidem architecto assumenda excepturi?
         </p>
-        <button>Read more!</button>
+        <a
+          class="button1 bouncy"
+          onClick={() => {
+            navigate("/news");
+          }}
+        >
+          Read More!
+        </a>
       </article>
     </div>
   );

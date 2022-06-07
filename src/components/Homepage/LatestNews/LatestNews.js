@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function LatestNews() {
+  let navigate = useNavigate();
   return (
     <div>
       <article className="Latestnews-item">
@@ -20,7 +22,14 @@ function LatestNews() {
           delectus vitae animi! Deleniti, optio! Expedita praesentium in magni
           voluptate assumenda labore sunt eveniet maiores enim? Id, sit
         </p>
-        <button>Read More</button>
+        <a
+          class="button1 bouncy"
+          onClick={() => {
+            navigate("/news");
+          }}
+        >
+          Read More!
+        </a>
       </article>
     </div>
   );
