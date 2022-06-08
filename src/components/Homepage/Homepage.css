@@ -4,6 +4,6 @@
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-.TitleClass {
-  text-align: center;
+.CardTitle {
+  font-size: large;
 }
