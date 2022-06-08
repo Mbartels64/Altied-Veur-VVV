@@ -1,47 +1,73 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import CardGroup from "react-bootstrap/CardGroup";
+import "../Homepage.css";
 
 function Hotnews() {
   let navigate = useNavigate();
   return (
     <div>
-      <article>
-        <h1>Hot News</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          quaerat, sit porro, illum ad saepe ducimus, nam adipisci non labore
-          placeat quibusdam commodi atque. Rem facere necessitatibus officia
-          dolore aliquam?Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Sit architecto adipisci non eos neque consequatur nemo ipsum,
-          sequi minima dicta blanditiis quos odio repudiandae fugiat at
-          reprehenderit fuga facere? Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Exercitationem quibusdam, eligendi, esse a cumque ea
-          quae excepturi consequuntur, optio quas numquam quo id quisquam
-          laboriosam! Exercitationem, consequuntur. Voluptates, excepturi
-          assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Accusamus eligendi nulla eaque eveniet soluta et, atque dolorem
-          corporis libero aut ab suscipit id cumque repellat explicabo deserunt
-          aliquid, aspernatur maiores. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Cupiditate atque sed nulla ipsum tenetur, id minima
-          totam nesciunt ab, accusamus, voluptates omnis culpa? Consequuntur
-          minus in perspiciatis maiores, ipsum excepturi. Lorem, ipsum dolor sit
-          amet consectetur adipisicing elit. Optio molestiae facilis ea nulla
-          ex. Aliquam vitae, blanditiis corrupti, molestias vel incidunt debitis
-          distinctio aspernatur consequuntur odit porro, aperiam ex iste. Lorem,
-          ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat
-          officiis libero magni quod consequatur repellat distinctio quasi
-          debitis velit, itaque possimus recusandae, aperiam expedita animi
-          quidem architecto assumenda excepturi?
-        </p>
-        <a
-          class="button1 bouncy"
-          onClick={() => {
-            navigate("/news");
-          }}
-        >
-          Read More!
-        </a>
-      </article>
+      <h1>Most Populair News Items</h1>
+      <CardGroup>
+        <Card>
+          <Card.Img
+            variant="top"
+            src="https://media.gettyimages.com/photos/georgios-giakoumakis-of-vvv-venlo-celebrates-during-the-dutch-match-picture-id1230569803?k=20&m=1230569803&s=612x612&w=0&h=o0axDpxdehvf_wFt-5flB8oApAxMuaCzu7d_Q89XDRI="
+          />
+          <Card.Body>
+            <Card.Title className="TitleClass">Card title</Card.Title>
+            <Card.Text className="CardClass">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img
+            variant="top"
+            src="https://media.gettyimages.com/photos/thorsten-kirschbaum-of-vvv-venlo-georgios-giakoumakis-of-vvv-venlo-picture-id1232865974?k=20&m=1232865974&s=612x612&w=0&h=ULBNkjKsoUE4H0EBl3GLSkdSqsExVDbfeWCxLpQ5uD8="
+          />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text className="CardClass">
+              This card has supporting text below as a natural lead-in to
+              additional contentThis card has supporting text below as a natural
+              lead-in to additional contentThis card has supporting text below
+              as a natural lead-in to additional contentThis card has supporting
+              text below as a natural lead-in to additional content
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+        <Card>
+          <Card.Img
+            variant="top"
+            src="https://media.gettyimages.com/photos/supporters-of-vvv-venlo-during-the-dutch-eredivisie-match-between-de-picture-id1138336147?k=20&m=1138336147&s=612x612&w=0&h=o6g2AXJl2IyYj7eWEy_Q_wtL5nMFRnyUknonuXzZQhc="
+          />
+          <Card.Body>
+            <Card.Title>Card title</Card.Title>
+            <Card.Text className="CardClass">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action. This is a wider
+              card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show
+              that equal height action.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
     </div>
   );
 }

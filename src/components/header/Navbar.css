@@ -99,3 +99,8 @@ nav img {
     margin: 6rem;
   }
 }
+@media screen and (max-width: 794px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
