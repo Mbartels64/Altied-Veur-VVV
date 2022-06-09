@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import CardGroup from "react-bootstrap/CardGroup";
@@ -29,6 +29,9 @@ function Hotnews() {
               quisquam hic molestiae architecto, quam, soluta blanditiis ea vel
               minus sint vitae inventore et? Unde, praesentium?
             </Card.Text>
+            <Link to="/news">
+              <Button variant="outline-primary">Read More...</Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">Last updated 3 mins ago</small>
@@ -48,6 +51,9 @@ function Hotnews() {
               as a natural lead-in to additional contentThis card has supporting
               text below as a natural lead-in to additional content
             </Card.Text>
+            <Link to="/news">
+              <Button variant="outline-primary">Read More...</Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">Last updated 3 mins ago</small>
@@ -68,6 +74,9 @@ function Hotnews() {
               content. This card has even longer content than the first to show
               that equal height action.
             </Card.Text>
+            <Link to="/news">
+              <Button variant="outline-primary">Read More...</Button>
+            </Link>
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">Last updated 3 mins ago</small>

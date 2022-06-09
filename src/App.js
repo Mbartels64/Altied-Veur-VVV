@@ -21,7 +21,6 @@ function App() {
         <Route path="/signin" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/socials" element={<Socials />} />
-
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>
