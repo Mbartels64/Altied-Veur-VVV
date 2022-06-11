@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import CardGroup from "react-bootstrap/CardGroup";
 import "../Homepage.css";
 function LatestNews() {
-  let navigate = useNavigate();
   return (
     <div>
       <h1>Latest News</h1>

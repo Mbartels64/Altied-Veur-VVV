@@ -1,12 +1,11 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import CardGroup from "react-bootstrap/CardGroup";
 import "../Homepage.css";
 
 function Hotnews() {
-  let navigate = useNavigate();
   return (
     <div>
       <h1>Most Populair News Items</h1>

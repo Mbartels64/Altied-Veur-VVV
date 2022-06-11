@@ -16,6 +16,7 @@ const Signin = ({ setIsAuth }) => {
       window.location.pathname = "/";
     });
   };
+
   return (
     <>
       <Container>
